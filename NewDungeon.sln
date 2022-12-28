@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewDungeon", "NewDungeon\NewDungeon.csproj", "{DE9CC21E-1564-4908-9760-14C066F321DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewDungeonClassLibrary", "NewDungeonClassLibrary\NewDungeonClassLibrary.csproj", "{3D6ADE07-31C1-49BB-96D5-51D39B5668D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE9CC21E-1564-4908-9760-14C066F321DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE9CC21E-1564-4908-9760-14C066F321DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE9CC21E-1564-4908-9760-14C066F321DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE9CC21E-1564-4908-9760-14C066F321DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D6ADE07-31C1-49BB-96D5-51D39B5668D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D6ADE07-31C1-49BB-96D5-51D39B5668D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D6ADE07-31C1-49BB-96D5-51D39B5668D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D6ADE07-31C1-49BB-96D5-51D39B5668D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E11F3CA-84E6-4587-BA3F-A8FF3C67F6CD}
+	EndGlobalSection
+EndGlobal

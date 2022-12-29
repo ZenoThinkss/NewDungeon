@@ -1,6 +1,6 @@
 ﻿namespace NewDungeonClassLibrary
 {
-    public class Character
+    public abstract class Character
     {
         //order matters if you put hp in front of maxhp in props and not in constructor things will go awry
 
@@ -57,11 +57,11 @@
 
         }
 
-        public int CalcDefense() { return _defense; }
+        public virtual int CalcDefense() { return Defense; } 
 
-        public int CalcAccuracy() { return _accuracy;}
+        public virtual int CalcAccuracy() { return Accuracy; }
 
-        public int CalcDamage() { return 0;}
+        public abstract int CalcDamage();
 
 
     }

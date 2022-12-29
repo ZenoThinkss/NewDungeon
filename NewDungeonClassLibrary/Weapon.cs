@@ -44,6 +44,23 @@ namespace NewDungeonClassLibrary
         
         }
 
+        public string GetWeaponDescription(WeaponTypes playerWeapon)
+        {
+            return playerWeapon switch
+            {
+
+                WeaponTypes.Understanding => "Perceptivity",
+                WeaponTypes.Honesty => "Pricipality",
+                WeaponTypes.Humility=> "Modesty",
+                WeaponTypes.Authenicity => "Genuity",
+                WeaponTypes.Respect => "Regard",
+            };
+
+
+        }//end GetOrigin
+
+
+
         //Methods - Monkeys
 
         public override string ToString()

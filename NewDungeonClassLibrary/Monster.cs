@@ -49,13 +49,37 @@ namespace NewDungeonClassLibrary
         public static Monster GetMonster()
         {
 
-            Monster monster = new Monster("Monster", 50, 30, 26, 100, 21, 24, "This be a Monster.");
+          Deciet deciet = new Deciet(name: "Deceptive Beast", 40, 30, 13, 0, 3, 4, "Very Deceptive...");
 
-            List<Monster> monsters = new List<Monster> {monster, monster, monster };
+          Regret regret = new Regret(name: "Regretful Beast", 20, 10, 49, 23, 4, 5, "So very regretful....");
 
-            return monsters[new Random().Next(monsters.Count)];
-             
+          Shame shame = new Shame(name: "Shameful Beast", 40, 30, 13, 0, 3, 4, "Shameful little guy...");
+
+          Ego ego = new Ego(name: "Deceptive Beast", 40, 30, 13, 0, 3, 4, "What a funny little guy...");
+
+
+            var lie = new Deciet();
+            var missedOpportunity = new Regret();
+            var embarassment = new Shame();
+            var littleGuy = new Ego();
+
+
+            List<Monster> monsters = new List<Monster>()
+            {
+
+                deciet, littleGuy, regret, littleGuy, embarassment, ego, deciet, shame, lie, lie, 
+                missedOpportunity, missedOpportunity, littleGuy, shame, regret, littleGuy, lie, embarassment,
+                littleGuy, embarassment, littleGuy
+
+
+            };
+
+
+            int randomNbr = new Random().Next(monsters.Count);
+            Monster monster = monsters[randomNbr];
+            return monster;
         }
+
         
 
 

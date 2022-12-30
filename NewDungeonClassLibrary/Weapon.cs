@@ -57,7 +57,7 @@ namespace NewDungeonClassLibrary
             };
 
 
-        }//end GetOrigin
+        }//end GetWeapon Description
 
 
 

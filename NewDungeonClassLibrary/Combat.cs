@@ -11,7 +11,7 @@ namespace NewDungeonClassLibrary
     {
        public static void AttackPhase(Character attack, Character defend) 
        {
-
+            
             var roll = new Random().Next(1, 101);
             //slight pause after roll
             Thread.Sleep(200);
@@ -19,6 +19,7 @@ namespace NewDungeonClassLibrary
 
             //this needs to be changed up. did put in a cal for evasiveness so have
             //TODO Evasiveness
+            
             bool success = roll < attack.CalcAccuracy() - defend.CalcDefense();
             if (success)
             {
@@ -46,11 +47,13 @@ namespace NewDungeonClassLibrary
         public static void DoBattle(Player player, Monster monster) 
         {
 
-            AttackPhase(player, monster); 
+            AttackPhase(player, monster);
+            Console.WriteLine($"{player.Name} Hp: {player.HitPoints}");
+            Console.WriteLine($"{monster.Name} Hp: {monster.HitPoints}");
             
                 if (monster.HitPoints > 0) 
                 {
-
+                 
                     AttackPhase(monster, player);
                 
                 }
@@ -59,7 +62,7 @@ namespace NewDungeonClassLibrary
 
         public static void DoRunBattle(Monster monster, Player player) 
         {
-            if (monster.HitPoints > 0 && player.HitPoints > 0) 
+            if (monster.HitPoints > 0 && player.HitPoints >0) 
             {
                 AttackPhase(monster, player);
             }

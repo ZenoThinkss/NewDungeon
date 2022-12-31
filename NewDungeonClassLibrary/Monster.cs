@@ -25,10 +25,15 @@ namespace NewDungeonClassLibrary
 
         public Monster(string name, int maxHitPoints, int hitPoints, int defense, int accuracy, int minDamage, int maxDamage, string description) : base(name, maxHitPoints, hitPoints, defense, accuracy) 
         {
-
+            Name = name;
+            Description = description;
+            MaxHitPoints = maxHitPoints;
+            HitPoints = hitPoints;
+            Defense = defense;
+            Accuracy = accuracy;
             MaxDamage= maxDamage;
             MinDamage= minDamage;
-            Description= description;
+            
          
         }
 
@@ -49,13 +54,13 @@ namespace NewDungeonClassLibrary
         public static Monster GetMonster()
         {
 
-          Deciet deciet = new Deciet(name: "Deceptive Beast", 40, 30, 13, 0, 3, 4, "Very Deceptive...");
+          Deciet deciet = new Deciet("Decietful Beast" , 40, 30, 13, 0, 3, 4, "Very Deceptive...");
 
-          Regret regret = new Regret(name: "Regretful Beast", 20, 10, 49, 23, 4, 5, "So very regretful....");
+          Regret regret = new Regret("Regretful Beast", 20, 10, 49, 23, 4, 5, "So very regretful....");
 
-          Shame shame = new Shame(name: "Shameful Beast", 40, 30, 13, 0, 3, 4, "Shameful little guy...");
+          Shame shame = new Shame("Shameful Beast", 40, 30, 13, 0, 3, 4, "Shameful little guy...");
 
-          Ego ego = new Ego(name: "Deceptive Beast", 40, 30, 13, 0, 3, 4, "What a funny little guy...");
+          Ego ego = new Ego("Deceptive Beast", 40, 30, 13, 0, 3, 4, "What a funny little guy...");
 
 
             var lie = new Deciet();

@@ -14,9 +14,13 @@ namespace NewDungeonClassLibrary
         {
 
             Name = "Shameful Beast";
-            //specifically for this monster
-            //if statement 
-            //do while for battle sequence 
+            MaxHitPoints = 35;
+            HitPoints = 34;
+            Defense = 20;
+            Accuracy = 100;
+            MinDamage = 10;
+            MaxDamage = 13;
+            Description = "Very cunning, this beast will draw you in with intisive offers, just to take you for everything";
 
 
         }
